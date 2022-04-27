@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Box</title>
+
+    <style>
+
+        /* Todos os Atributos das  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Pegas as class */
+        .section-one, .section-two {
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            padding: 15px;  /* T D B E */
+        }
+
+        .section-one {
+            width: 200px;
+            background: rosybrown;
+            /* border: 5px solid black; */
+            /* border-bottom-width: 5px;
+            border-block-color: black;
+            border-bottom-style: solid; */
+            margin: 20px;
+        }
+        /* obs as margins não são somadas são utilizadas a maior */
+        .section-two {
+            width: 200px;
+            background: royalblue;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="section-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro soluta maiores ad necessitatibus error corrupti, eligendi deleniti aspernatur quidem nobis, magni accusamus neque, ipsum dolorum repellat reprehenderit ducimus provident excepturi!</section>
+    <section class="section-two">2</section>
+</body>
+</html>

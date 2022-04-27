@@ -1,0 +1,185 @@
+<!-- Documento Html / Tags com corpo e sem corpo <test />  -->
+<!-- tag com atributos <tag atributo="valor1 e valor2" > pode criar seus proprios atributos para usar com javaScript -->
+<!-- espaços com Itentação-->
+<!-- É case insensitive não importa minusculo ou maiusculo  -->
+<!-- HTML5-->
+<!DOCTYPE html>
+<!-- Tag html tem corpo-->
+<html lang="pt-BR">
+<!-- Cabeça Especificação o que tem no html-->
+<head>
+    <!--  tag Metadados de especificação não tem corpo -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        introduzido pela apple para dispositivos móveis
+         viewport tela do navegador
+        width=device-width largura da tela do navegador
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tag title é obrigatório-->
+    <title>Meu HTML</title>
+
+    <!-- Tag com conteúdo css dentro do HTML
+        Quando estiver a mesma especifidade o que prevalece é o último
+    -->
+    <style>
+
+    /* Selecionar pelas Tag */
+    h1 {
+        color: aqua;
+        background: blue;
+    }
+
+    p{
+    color: brown;
+    background: burlywood;
+    }
+
+    /* Selecionar um elemento pelo ID, subscrever um ID é apenas com um outro ID */
+    #heading-2 {
+        color: crimson;
+    }
+
+    /* Selecionar elementos pela 'class' com importante "!important" não é aconselhavel */
+    .fundo-vermelho {
+       background: darkgoldenrod !important;
+    }
+
+    .bold {
+        color: darkgreen;
+    }
+
+    </style>
+
+</head>
+
+<!-- Copor do HTML-->
+<body>
+    <!-- tag titulo com atributo id  identificador único ex: "heading" padrão "heading-1"  -->
+    <h1 id="heading-1">Titulo Aula Html</h1>
+    <!-- Semantica do HTML com importancia SEO H1 é o principal toda tag html pode receber um atributo style-->
+     <h1 id="heading-2" >Titulo Aula Html 1</h1>
+
+     <!-- Texte é fluido inline ocupa somente seu espaço -->
+     <!-- Tag b bold é um estado físico -->
+     <p><b>Lorem ipsum dolor</b>  sit amet consectetur, adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+     <h2 id="heading-3" style="background: darkgrey;">Titulo Aula Html 2</h2>
+     <!-- a tag strong é semantica strong é um estado lógico -->
+     <p> <strong>Lorem ipsum dolor</strong>  sit amet consectetur, adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+     <h3 id="heading-4">Titulo Aula Html 3</h3>
+     <!-- i deixa o texto em italico-->
+     <p> <i>Lorem ipsum dolor sit amet consectetur</i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+     <h4 id="heading-5">Titulo Aula Html 4</h4>
+     <!-- em é para dar enfase na frase -->
+     <p> <em>Lorem ipsum dolor sit amet consectetur</em> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+     <h5 id="heading-6">Titulo Aula Html 5</h5>
+     <!-- tag de link  rel defina o tipo de relação -->
+     <p> <a href="http://achaddo.com.br/shop" target="_blank" rel="relacion" >Lorem ipsum dolor sit amet consectetur</a> , adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+     <h6 id="heading-7">Titulo Aula Html 6</h6>
+     <p>
+         <!-- tag de imagem semantico-->
+         <img src="http://achaddo.com.br/storage//upload/images_products/store_1/50000102889/midia-cd-r-velocidade-52x-unitario-em-envelope-multilaser-cd006-50000102889.jpeg"
+          alt="texto alternativo" width="100px" height="100px">
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+    <!-- Tag paragrafo tag de block-->
+    <p>
+        <!-- Tag de navegação -->
+        <nav>
+            <!-- Lista não ordenada -->
+            <ul>
+              <li>primeiro item</li>
+              <li>segundo item      <!-- Observe, a tag de fechamento </li> não é colocada aqui! (Look, the closing </li> tag is not placed here!) -->
+                   <ol>
+                     <li>segundo item primeiro subitem</li>
+                     <li>segundo item segundo subitem</li>
+                     <li>segundo item terceiro subitem</li>
+                 </ol>
+              </li>
+              <!-- Aqui está a tag de fechamento </li> (Here is the closing </li> tag) -->
+             <li>terceiro item</li>
+            </ul>
+
+            <!-- Lista ordenada -->
+              <ol>
+                   <li>segundo item primeiro subitem</li>
+                   <li>segundo item segundo subitem</li>
+                   <li>segundo item terceiro subitem</li>
+              </ol>
+        </nav>
+
+        <!--  Fazer errata  "del" retira o texto  -->
+        <del>Lorem ipsum dolor sit amet consectetur</del><br>
+        <!-- tag "ins" adição semantica -->
+         <ins>Lorem ipsum dolor sit amet consectetur</ins><br>
+         <!-- tag riscada fisica -->
+         <s> Lorem ipsum dolor sit amet consectetur</s><br>
+         <!-- tag fisica -->
+         <u> , adipisicing elit.</u><br>
+         <!-- Tag diminue o texto-->
+        <small>  Rem consequatur pariatur temporibus magni ducimus consequuntur</small><br>
+        <!-- Tag elevado -->
+        teste <sup>doloribus sed quis debitis,</sup><br>
+        <!-- tag baixar-->
+        teste <sub>doloribus sed quis debitis,</sub><br>
+        <!-- tag de sitação-->
+        <q cite="http://achaddo.com.br/shop"> doloribus sed quis debitis,</q>
+
+         doloribus sed quis debitis, laborum impedit quia illo labore
+          dolor expedita voluptatem, qui commodi quasi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dolorem, id nulla voluptatum illum velit ad optio, mollitia earum nemo facilis ipsam perspiciatis quos inventore perferendis doloremque voluptatem nihil dolorum.</p>
+
+    <!-- Quebra de linha-->
+    <br>
+
+    <!-- tag Separação por linha-->
+    <hr>
+    <!-- Bloco de Citação-->
+    <blockquote cite="http://achaddo.com.br/shop">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facere omnis nam, esse sunt minus voluptate. Perspiciatis, quisquam necessitatibus tempore architecto quidem dolorem dolor, aliquid id accusamus omnis temporibus atque!
+    </blockquote>
+
+    <!-- Tag de separação de codigo-->
+    <code>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa reprehenderit obcaecati atque sit, architecto ad odit. Corporis suscipit ab, odit, libero rerum voluptatem, pariatur reprehenderit laudantium quam fugit delectus?
+    </code>
+
+    <!---- de codigo com formatação-->
+    <pre>
+       try {
+            ## Gerar Fatura
+            $credit = new ShopsInvoice();
+            $credit->shop_id = $shop_id;
+            $credit->shops_invoice_status_id = 1; // 1 Pagamento Aguardando
+            $credit->shops_invoice_type_id = 1; /// Tipo Fatura
+            $credit->title = 'Crédito Frete Fácil';
+            $credit->objective = 'sigep_fretefacil';
+            $credit->note = 'Sistema de Frete Fácil Correios';
+            $credit->price =  ($request->vlCredit > 0.00) ? str_replace($source, $replace, $request->vlCredit) : 0.00;
+            $credit->price_descount = 0.00;
+            $credit->save();
+        } catch (Exception $e) {
+            // echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+            return null;
+        }
+        return $credit->id;
+    </pre>
+    <!-- TAG DE CONTAINER GENERICOS SPAM E DIV-->
+    <!-- Tag span é "inline" só aplicado no texto atributo "class" podem se repetir pode ser usado dentro do paragrafo -->
+    <span class="fundo-vermelho borda-esquerda">fundo vermelho</span>  <br>
+    <span class="fundo-vermelho borda-direita">fundo vermelho</span>
+
+    <!-- DIV Tag de container em display Block-->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum praesentium quia quaerat eligendi repellat odit temporibus excepturi, ad maiores blanditiis molestiae. Quibusdam excepturi omnis dignissimos velit laudantium quam quod.
+    </div>
+
+</body>
+</html>

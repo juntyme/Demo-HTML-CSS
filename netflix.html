@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Teste Netflix</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/eb482c64-e879-4e88-9ddc-d839cb7d1232/e9e3f8d0-711a-448e-8441-33b269740de7/BR-pt-20220131-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+        #heading {
+            background: rgba(0, 0, 0, 0.7); /* alpha meche na opacidade */
+        }
+
+        #heading div {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;  /* 0 => top e button, auto => direita e esquerda */
+        }
+
+        #heading .h1 {
+            /* pode utilizar o padding ou margin no sentido horário */
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+                  }
+
+         #heading a {
+            color: #fff; /** cor hexadecimal */
+            text-decoration: none;
+            font-family:sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+<header id="heading">
+    <div>
+        <h1 class="h1"><a href="#">NetFlix</a></h1>
+        <h2 class="h1"><a href="#">Options</a></h2>
+    </div>
+
+</header>
+</body>
+</html>
